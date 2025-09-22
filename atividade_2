@@ -1,6 +1,7 @@
+Produtos >------< Clientes
 
-__________        __________        _________
-|        | \     /|        | \      |       |
-|Produtos|>------<|Clientes|>------ |Fatura |
-|        |/      \|        | /      |       |
-|--------|        |--------|        |-------|
+Fatura ------< Clientes
+
+produtos >----- Fatura
+
+cliente ------ fatura
