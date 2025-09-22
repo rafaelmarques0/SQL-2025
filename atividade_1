@@ -1,0 +1,7 @@
+um cliente tem uma fatura 1-1
+uma fatura tem muitos produtos 1-n
+varios produtos são arumados por um funcionario n-1
+
+muitos clientes tem varias faturas n-n
+muitas faturas tem muitos produtos n-n
+um funcinario guarda muitos produtos 1-n
