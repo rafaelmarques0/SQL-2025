@@ -2,6 +2,19 @@ um cliente tem uma fatura 1-1
 uma fatura tem muitos produtos 1-n
 varios produtos são arumados por um funcionario n-1
 
-muitos clientes tem varias faturas n-n
-muitas faturas tem muitos produtos n-n
-um funcinario guarda muitos produtos 1-n
+Correção:
+clientes --- faturas
+um cliente pode ter varias faturas (1-n)
+uma fatura pertence a 1 cliente (1-1)
+
+funcionaris --- clientes
+varios funcionariostem varios clientes (n-n)
+um funcionarios tem varios clientes (1-n)
+
+produtos --- faturas
+varios produtos pertence a uma fatura (n-1)
+varios produtos pertence a varias fatura (n-n)
+
+clientes --- produtos
+um cliente para varios produtos (1-n)
+um cliente para um produtos (1-1)
