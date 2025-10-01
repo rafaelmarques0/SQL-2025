@@ -3,7 +3,7 @@ alunos
 -nome
 -data_nascimento
 -morada
--curso (FK)
+-id_ curso (FK)
 
 Funcionarios
 -id_funcionarios (PK)
@@ -16,10 +16,10 @@ Professor
 -nome
 -especialidade
 -telefone (CK)
--email
+-email (CK)
 -id_funcionario (FK)
 
 Cursos
--id_disciplina (PK)
+-id_curso (PK)
 -nome
 -carga_horaria
