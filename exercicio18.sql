@@ -1,6 +1,9 @@
+
 CREATE DATABASE armazenamento;
+
 USE armazenamento;
 
+-- cria a tabela
 CREATE TABLE produtos (
 produtosID INT PRIMARY KEY,
 cod_prod INT NOT NULL,
@@ -8,6 +11,8 @@ valor_unit DECIMAL(10,2) NOT NULL,
 quantidade INT NOT NULL,
 desconto INT
 );
+
+--inser os dados na tabela
 INSERT INTO produtos
 VALUES
 (1079,5,30.00,10,15),
@@ -24,3 +29,13 @@ VALUES
 (1090,5,30.00,10,1);
 
 SELECT * FROM produtos
+  
+-- pergunta 1
+SELECT cod-prod, valor_unit FROM produtos WHERE desconto = null
+
+-- pergunta 2
+UPDATE produtos
+SET desconto = 0 
+WHERE desconto is  NULL
+
+-- pergunta 3
