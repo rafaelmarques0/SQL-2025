@@ -31,7 +31,7 @@ VALUES
 SELECT * FROM produtos
   
 -- pergunta 1
-SELECT cod-prod, valor_unit FROM produtos WHERE desconto = null
+SELECT cod-prod, valor_unit FROM produtos WHERE desconto is null
 
 -- pergunta 2
 UPDATE produtos
@@ -39,3 +39,8 @@ SET desconto = 0
 WHERE desconto is  NULL
 
 -- pergunta 3
+SELECT produtosID, quantidade FROM produtos WHERE desconto >10 AND desconto < 20
+
+-- pergunta 4
+
+SELECT quantidade, valor_unit FROM produtos WHERE cod_prod = 2
