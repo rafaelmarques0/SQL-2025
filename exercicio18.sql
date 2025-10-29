@@ -36,7 +36,7 @@ SELECT cod-prod, valor_unit FROM produtos WHERE desconto is null;
 -- pergunta 2
 UPDATE produtos
 SET desconto = 0 
-WHERE desconto is  NULL;
+WHERE desconto IS NULL;
 
 -- pergunta 3
 SELECT produtosID, quantidade FROM produtos WHERE desconto >10 AND desconto < 20;
