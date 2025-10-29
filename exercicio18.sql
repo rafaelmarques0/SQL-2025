@@ -28,19 +28,19 @@ VALUES
 (1089,3,15.00,10,4),
 (1090,5,30.00,10,1);
 
-SELECT * FROM produtos
+SELECT * FROM produtos;
   
 -- pergunta 1
-SELECT cod-prod, valor_unit FROM produtos WHERE desconto is null
+SELECT cod-prod, valor_unit FROM produtos WHERE desconto is null;
 
 -- pergunta 2
 UPDATE produtos
 SET desconto = 0 
-WHERE desconto is  NULL
+WHERE desconto is  NULL;
 
 -- pergunta 3
-SELECT produtosID, quantidade FROM produtos WHERE desconto >10 AND desconto < 20
+SELECT produtosID, quantidade FROM produtos WHERE desconto >10 AND desconto < 20;
 
 -- pergunta 4
 
-SELECT quantidade, valor_unit FROM produtos WHERE cod_prod = 2
+SELECT quantidade, valor_unit FROM produtos WHERE cod_prod = 2;
